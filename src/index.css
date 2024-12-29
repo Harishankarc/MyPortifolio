@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+    background-image: url('../src/assets/noiseBackground.png');
+    background-size: 200px 200px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+
+}
+
+::selection {
+    background: #64ffda;
+    color: black;
+}
+
+:root {
+    color: white;
+    font-family: "Faculty Glyphic";
+    scroll-behavior: smooth;
+}
+
+.faculty-glyphic-regular {
+    font-family: "Faculty Glyphic", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.icons-container {
+    position: relative;
+}
+
+.icons-container::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 90px;
+    background-color: #8892b0;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.heading-line::after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 1px;
+    background-color: #64ffda;
+    margin-left: 20px;
+}
+.heading-line::before{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 1px;
+    background-color: #64ffda;
+    margin-right: 20px;
+}

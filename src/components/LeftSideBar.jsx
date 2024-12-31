@@ -2,7 +2,7 @@ import { Instagram, Github, Twitter, Linkedin } from "lucide-react";
 
 export default function LeftSideBar() {
   return (
-    <div className="h-[90vh] flex flex-col items-center justify-end">
+    <div className="h-[90vh] hidden md:flex flex-col items-center justify-end">
       <div className="flex flex-col items-center justify-center space-y-6 ml-10 icons-container">
         <a href="https://github.com/Harishankarc" className="text-[#8892b0] hover:text-[#64ffda] transition duration-200">
           <Github size={24} />

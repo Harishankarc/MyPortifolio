@@ -6,17 +6,17 @@ import { Fade,Slide } from "react-awesome-reveal";
 export default function Project(){
     return(
         <div className="min-h-screen flex flex-col items-center" id="project">
-            <h1 className="text-3xl text-[#64ffda] heading-line flex items-center py-10 mb-10">Some Things I’ve Built</h1>
+            <h1 className="text-3xl text-[#64ffda] heading-line flex items-center py-10 mb-10 text-center ">Projects</h1>
             <div className="flex flex-col items-center gap-32">
                 <Fade cascade>
-                    <div className="flex justify-between items-center ">
-                        <div className="w-[40rem] border">
+                    <div className="flex md:flex-row flex-col justify-between items-center ">
+                        <div className="md:w-[40rem] w-[22rem] border">
                             <div className="border border-[#64ffda] translate-x-2 translate-y-[-0.5rem]">
                                 <img src={Cartella} alt="cartella image" className="p-2 saturate-0 hover:saturate-100 transition duration-200 cursor-pointer"/>
                             </div>
                         </div>
                         <Slide direction="right">
-                            <div className="w-[30rem] flex flex-col justify-center items-end translate-x-[-8rem]">
+                            <div className="md:w-[30rem] flex flex-col justify-center items-center md:items-end md:translate-x-[-8rem] ml-10 mr-10 md:mt-0 mt-10">
                                 <p className="text-sm text-[#64ffda]">Featured Project</p>
                                 <p className="text-3xl text-[#8892b0] hover:text-[#64ffda] cursor-pointer pb-2">Cartella</p>
                                 <div className="text-[#8892b0] bg-slate-900 p-5 rounded-lg">
@@ -38,9 +38,9 @@ export default function Project(){
                             </div>
                         </Slide>
                     </div>
-                    <div className="flex justify-between items-center">
+                    <div className="flex md:flex-row flex-col-reverse justify-between items-center">
                         <Slide direction="left">
-                            <div className="w-[30rem] flex flex-col justify-center items-start translate-x-[8rem] z-10">
+                            <div className="md:w-[30rem] flex flex-col justify-center z-10 md:items-start md:translate-x-[8rem] ml-10 mr-10 items-center md:mt-0 mt-10">
                                 <p className="text-sm text-[#64ffda]">Featured Project</p>
                                 <p className="text-3xl text-[#8892b0] hover:text-[#64ffda] cursor-pointer pb-2">Expense Tracker</p>
                                 <div className="text-[#8892b0] bg-slate-900 p-5 rounded-lg">
@@ -62,20 +62,20 @@ export default function Project(){
                                 </div>
                             </div>
                         </Slide>
-                        <div className="w-[40rem] border z-[-999]">
+                        <div className="md:w-[40rem] w-[22rem] border z-[-999]">
                             <div className="border border-[#64ffda] translate-x-2 translate-y-[0.5rem]">
                                 <img src={expensetracker} alt="cartella image" className="p-2 saturate-0 hover:saturate-100 transition duration-200 cursor-pointer"/>
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-between items-center ">
-                        <div className="w-[40rem] border">
+                    <div className="flex md:flex-row flex-col justify-between items-center ">
+                        <div className="flex md:flex-row flex-col border w-[22rem]">
                             <div className="border border-[#64ffda] translate-x-2 translate-y-[-0.5rem]">
                                 <img src={pizzahut} alt="cartella image" className="p-2 saturate-0 hover:saturate-100 transition duration-200 cursor-pointer"/>
                             </div>
                         </div>
                         <Slide direction="right">
-                            <div className="w-[30rem] flex flex-col justify-center items-end translate-x-[-8rem]">
+                            <div className="md:w-[30rem] flex flex-col justify-center md:items-end md:translate-x-[-8rem] ml-10 mr-10 items-center md:mt-0 mt-10">
                                 <p className="text-sm text-[#64ffda]">Featured Project</p>
                                 <p className="text-3xl text-[#8892b0] hover:text-[#64ffda] cursor-pointer pb-2">PizzaHut Clone</p>
                                 <div className="text-[#8892b0] bg-slate-900 p-5 rounded-lg">

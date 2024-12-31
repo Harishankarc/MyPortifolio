@@ -2,9 +2,9 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Skills(){
     return (
-        <div className="h-screen flex flex-col items-center justify-center" id="skills">
+        <div className="min-h-screen flex flex-col items-center md:justify-center" id="skills">
             <h1 className="text-3xl text-[#64ffda] heading-line flex items-center py-10 mb-10">Skills</h1>
-            <div className="flex justify-between gap-20">
+            <div className="md:flex-row flex-col flex justify-between gap-20">
                 <Fade cascade>
                     <div className="flex flex-col items-center">
                         <h1 className="text-xl text-[#64ffda] flex items-center mb-5">Languages</h1>

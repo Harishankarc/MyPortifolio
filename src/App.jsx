@@ -1,4 +1,4 @@
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
@@ -11,27 +11,29 @@ import { Player } from 'video-react';
 import introVideo from '../src/assets/intro.mp4'
 
 export default function App() {
-  const [intro,setIntro] = useState(true);
+  const [intro, setIntro] = useState(true);
   useEffect(()=>{
     setTimeout(()=>{
       setIntro(false);
     },3000)
   })
-  if(intro){
+  if (intro) {
     return (
-      <div className="w-full h-screen flex items-center justify-center bg-[#121212]">
-        <div className="relative w-[90%] h-[90%] bg-[#050b14]">
-          <video
-            src={introVideo}
-            autoPlay
-            muted
-            loop
-            className="w-full h-full object-contain rounded-lg"
-          />
-        </div>
+      <div className="w-screen aspect-video relative overflow-hidden flex justify-center items-center bg-[#121212] h-screen">
+        <video
+          src={introVideo}
+          autoPlay
+          muted
+          loop
+          className="md:w-1/2 md:h-1/2 object-cover"
+        />
+        <div className="relative top-0 right-10 w-[100px] h-full bg-[#121212]"></div>
       </div>
+
+
+
     );
-  }else{
+  } else {
     return (
       <div className="h-auto bg-[#121212] flex flex-col">
         <Navbar />
@@ -42,7 +44,7 @@ export default function App() {
           <div className="flex-1 overflow-y-auto h-auto">
             <Home />
             <About />
-            <Skills/>
+            <Skills />
             <Project />
             <Contact />
           </div>

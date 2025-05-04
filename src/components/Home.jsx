@@ -1,10 +1,8 @@
-import pdfURL from '../assets/Resume.pdf'
+
 import {Fade,Bounce} from 'react-awesome-reveal';
 import MyButton from './MyButton';
 export default function Home(){
-    function ButtonOnClick(){
-        window.open(pdfURL, "_blank");
-    }
+
     return(
         <div className="md:h-[90vh] min-h-[80vh] flex md:ml-0 md:mr-0 ml-10 mr-10 justify-center items-center">
             <div className="">
@@ -15,7 +13,7 @@ export default function Home(){
                 <Fade><p className="text-[#8892b0] text-lg py-1">I'm a full stack developer specializing in building and </p></Fade>
                 <Fade><p className="text-[#8892b0] text-lg py-1">designing exeptional web appliactions. Currently, I'm focused on </p></Fade>
                 <Fade><p className="text-[#8892b0] text-lg py-1">building user-friendly, efficent <a href="" className="text-[#64ffda]">projects</a>.</p></Fade>
-                <Bounce triggerOnce><MyButton onClick={ButtonOnClick}/></Bounce>
+                <Bounce triggerOnce><MyButton/></Bounce>
             </div>
         </div>
     );

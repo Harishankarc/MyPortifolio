@@ -8,20 +8,23 @@ export default function Skills(){
                 <Fade cascade>
                     <div className="flex flex-col items-center">
                         <h1 className="text-xl text-[#64ffda] flex items-center mb-5">Languages</h1>
-                        <div className="grid grid-cols-2 gap-4 p-5">
+                        <div className="grid grid-cols-3 gap-4 p-5">
                             <i class="devicon-c-plain-wordmark colored text-7xl"></i>
                             <i class="devicon-cplusplus-plain colored text-7xl"></i>
                             <i class="devicon-java-plain colored text-7xl"></i>
                             <i class="devicon-javascript-plain colored text-7xl"></i>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
                         </div>
                     </div>
                     <div className="flex flex-col items-center">
                         <h1 className="text-xl text-[#64ffda] flex items-center mb-5">Front-End</h1>
-                        <div className="grid grid-cols-2 gap-4 p-5">
+                        <div className="grid grid-cols-3 gap-4 p-5">
                             <i class="devicon-react-original colored text-7xl"></i>
                             <i class="devicon-tailwindcss-original colored text-7xl"></i>
                             <i class="devicon-html5-plain colored text-7xl"></i>
                             <i class="devicon-nextjs-original-wordmark text-7xl"></i>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />
+
                         </div>
                     </div>
                     <div className="flex flex-col items-center">

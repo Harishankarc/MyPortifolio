@@ -19,7 +19,7 @@ export default function App() {
   })
   if(intro){
     return (
-      <div className="w-full h-screen flex items-center justify-center bg-[#050b14]">
+      <div className="w-full h-screen flex items-center justify-center bg-[#121212]">
         <div className="relative w-[90%] h-[90%] bg-[#050b14]">
           <video
             src={introVideo}
@@ -33,13 +33,13 @@ export default function App() {
     );
   }else{
     return (
-      <div className="h-auto bg-[#050b14] flex flex-col">
+      <div className="h-auto bg-[#121212] flex flex-col">
         <Navbar />
         <div className="flex h-full">
           <div className="fixed left-0 top-0 h-full">
             <LeftSideBar />
           </div>
-          <div className="flex-1 overflow-y-auto min-h-screen">
+          <div className="flex-1 overflow-y-auto h-auto">
             <Home />
             <About />
             <Skills/>
